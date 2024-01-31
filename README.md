@@ -62,6 +62,8 @@ The containers specified in your Docker Compose file will be stopped and removed
 
 Before deploying the configuration in a production environment, make sure it is tailored to your needs.
 
+![imagell](https://github.com/DavidWorkGitHub/Docker-Task/assets/65865159/49548270-88a6-4093-8b14-d789434f4207)
+
 
 # Docker-Installation 
 Installation of Docker and Docker Compose: Using the official instructions supplied by Docker, I started by installing Docker and Docker Compose on the target system.
@@ -78,6 +80,8 @@ Verification of Running Containers: To confirm that the containers had been depl
 
 Getting to the WordPress Website: To access the WordPress website, go to http://localhost:3000/ in a web browser. This step verified that the Dockerized WordPress environment was operating correctly.
 Container Termination: The docker-compose down command was run in the terminal to finish the deployment. In order to ensure a smooth shutdown of the Dockerized environment, this step gracefully stopped and removed the containers.
+
+![image2](https://github.com/DavidWorkGitHub/Docker-Task/assets/65865159/62a2bdeb-1acf-4316-a914-5a3924fb3412)
 
 
 It turned out that the Dockerized WordPress environment was a successful and effective solution. Docker containers offer a reproducible and isolated environment, making deployment and maintenance simpler.
