@@ -26,7 +26,15 @@ View Running Containers: The following can be used to see how your running conta
 
 You will see a list of all currently running containers with their names, IDs, and other details displayed when you run this command.
 
-Your WordPress, MySQL, and Nginx containers ought to be operational at this point. Use your web browser to go to http://localhost to access your WordPress website.
+Your WordPress, MySQL, and Nginx containers ought to be operational at this point. Use your web browser to go to http://localhost:3000/ to access your WordPress website with the configuration page.
+
+
+![image2](https://github.com/DavidWorkGitHub/Docker-Task/assets/65865159/62a2bdeb-1acf-4316-a914-5a3924fb3412)
+
+
+![image](https://github.com/DavidWorkGitHub/Docker-Task/assets/65865159/39f824d7-24de-4818-ac29-b4019a79afd7)
+
+
 
 Use the following command to halt and remove the containers:
 
@@ -68,7 +76,7 @@ Command Line Execution: I used the terminal to go to the directory where the doc
 Verification of Running Containers: To confirm that the containers had been deployed successfully, the docker ps command was used. This command preserves the integrity of the environment by displaying an extensive list of all active containers.
 
 
-Getting to the WordPress Website: To access the WordPress website, go to http://localhost in a web browser. This step verified that the Dockerized WordPress environment was operating correctly.
+Getting to the WordPress Website: To access the WordPress website, go to http://localhost:3000/ in a web browser. This step verified that the Dockerized WordPress environment was operating correctly.
 Container Termination: The docker-compose down command was run in the terminal to finish the deployment. In order to ensure a smooth shutdown of the Dockerized environment, this step gracefully stopped and removed the containers.
 
 
