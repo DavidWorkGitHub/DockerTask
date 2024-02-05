@@ -102,41 +102,4 @@ It turned out that the Dockerized WordPress environment was a successful and eff
 
 
 
-# Docker Compose
 
-version: "3"
-services:
-  nginx: 
-    image: nginx:latest
-    restart: always
-    container_name: production-nginx
-    volumes:
-      - /etc/letsencrypt/:/etc/letsencrypt/
-      - ./nginx/:/etc/nginx/
-
-      
-    ports:
-      - "80:80"
-      - "443:443"
-  wp:
-    image: wordpress:latest
-    restart: always
-    container_name: production-wordpress
-    environment:
-      WORDPRESS_DB_HOST: production-db:3306
-      WORDPRESS_DB_USER: dbuser
-      WORDPRESS_DB_PASSWORD: dbpassword
-      WORDPRESS_DB_NAME: wordpress
-    volumes:
-      - ./wordpress:/var/www/html
-  db:
-    image: mysql:5.7
-    container_name: production-db
-    restart: always
-    environment:
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: dbuser
-      MYSQL_PASSWORD: dbpassword
-      MYSQL_RANDOM_ROOT_PASSWORD: "1"
-    volumes:
-      - ./mysql:/var/lib/mysql
